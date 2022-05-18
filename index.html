@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100;600&family=Lexend+Zetta:wght@100;400&family=Lexend:wght@100&family=Sarina&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Leyla Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md sticky-top bg-dark">
+      <div class="container-xl">
+        <a href="#" class="navbar-brand">
+          <span class="fw-bold text-light" id="nombre-sup">Leyla</span>
+        </a>
+      
+        <div
+          class="collapse navbar-collapse justify-content-end align-center"
+          id="main-nav"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-color"
+                aria-current="page"
+                href="#portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-color"
+                aria-current="page"
+                href="#about"
+                >Acerca de mí</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-color"
+                aria-current="page"
+                href="#contacto"
+                >Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-------------- perfil ------------->
+    <div class="container-fluid d-flex flex-column my-5 justify-content-center" id="perfil">
+      <img
+        class="img-fluid img-profile mx-auto"
+        src="./assets/foto-perfil.jpg"
+      />
+      <h3 class="text-center name">Leyla Victoria</h3>
+      <p class="text-center role">Desarrolladora Web</p>
+    </div>
+
+    <!---------- PORTFOLIO ----------->
+    <div class="container-fluid bg-dark text-light" id="portfolio">
+      <h3 class="text-center pt-5 text-uppercase">Mis Proyectos</h3>
+      <hr class="mx-auto" width="75%" />
+      <div class="container">
+        <div class="row pb-5 mx-auto">
+          <div class="col-4">
+            <a href="#" target="_blank">
+              <img
+                class="img-border img-fluid"
+                src="./assets/Star-Wars-Day.webp"
+                alt="imgagen star wars"
+              />
+            </a>
+          </div>
+          <div class="col-4">
+            <a href="#" target="_blank">
+              <img
+                class="img-border img-fluid"
+                src="./assets/matrixresurrections.jpg"
+                alt="elige tu propia aventura"
+              />
+            </a>
+          </div>
+
+          <div class="col-4">
+            <a href="#" target="_blank">
+              <img
+                class="img-border img-fluid"
+                src="./assets/pet.jpg"
+                alt="instapet"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container my-5 p-5" id="about">
+      <h2 class="text-center text-uppercase display-5">Acerca de mí</h2>
+      <hr class="mx-auto" width="75%" />
+      <p class="lead p-3">
+        ¡Hola! Mi nombre es Leyla, Soy de Buenos Aires, Argentina y tengo 25 años. Me gusta el arte y la fotografía. Me gusta mucho aprender y soy bastante curiosa.
+        Siempre estuve interesada en la tecnología pero no tenía información necesaria, ni los recursos para tomar la decisión e iniciar en el mundo IT. Un día tuve la oportunidad de realizar un curso de Testing de Software y me gustó tanto que empecé a investigar y me encontré con una nueva dimensión, que es la programación. Comencé mis estudios en una Licenciatura en Sistemas, pero no me sentí a gusto en el ambiente ya que no contaba con experiencia. También realicé cursos de manera autodidacta... Hoy en día estoy cursando en Plataforma 5, gracias a la Fundación Mediapila. Estoy muy contenta y conforme con todo el contenido y el acompañamiento que realizan! Esta es mi primera presentación de proyectos, ¡Espero les guste!
+      </p>
+    </div>
+
+    <!---------- contacto ----------->
+    <div
+      class="container-fluid bg-dark d-flex flex-column justify-content-center"
+      id="contacto"
+    >
+      <h2 class="text-uppercase text-center text-light pt-5">Contáctame</h2>
+      <hr class="text-light mx-auto" style="width: 75%" />
+      <form id="form"
+        action="https://formspree.io/f/moqregkk"
+        method="post"
+        class=" text-light p-5 mx-auto"
+      >
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input
+            name="nombre"
+            type="text"
+            class="form-control no-border"
+            id="nombre"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email </label>
+          <input name="email" type="email" class="form-control" id="email" />
+        </div>
+
+        <div class="mb-3">
+          <label for="telefono" class="form-label">Número de teléfono</label>
+          <input
+            name="telefono"
+            type="text"
+            class="form-control"
+            id="telefono"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="textarea" class="form-label">Mensaje</label><br />
+
+          <textarea
+            class=""
+            name="mensaje"
+            id="text-area"
+            cols="30"
+            rows="5"
+            style="width: 100%"
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-light">Enviar</button>
+      </form>
+    </div>
+
+    <!---------footer -------->
+    <div class="container-fluid bg-light">
+      <div class="row p-5">
+        <div class="col-12 col-md-6">
+          <h3 class="text-uppercase text-center">mi localidad</h3>
+          <p class="text-center">
+            Guernica - Buenos Aires
+          </p>
+        </div>
+        <div class="col-12 col-md-6">
+          <h3 class="text-uppercase text-center">mis redes sociales</h3>
+          <div class="iconos d-flex justify-content-center gap-2">
+            <a
+              href="#"
+              class="link-dark"
+              target="_blank>"
+            >
+              <ion-icon class="icon" name="logo-instagram"></ion-icon>
+            </a>
+            <a
+              href="https://www.facebook.com/leyla.r44"
+              class="link-dark"
+              target="_blank"
+            >
+              <ion-icon class="icon" name="logo-facebook"></ion-icon>
+            </a>
+            <a href="mailto:leylarod006@gmail.com" class="link-dark"
+              ><ion-icon class="icon" name="mail-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-4 bg-dark">
+      <p class="text-center p-footer text-light">
+        Copyright &copy; Leyla Portfolio 2022
+      </p>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
